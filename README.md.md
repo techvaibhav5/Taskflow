@@ -1,34 +1,50 @@
-# \# TaskFlow — Task \& Workflow Management System
+# TaskFlow — Task \& Workflow Management System
 
 # 
 
-# TaskFlow is a robust, full-stack enterprise task tracking and workflow management application designed with a decoupled architecture. The system features a stateless, secure backend built with Spring Boot and a responsive, dynamic user interface implemented using vanilla JavaScript, HTML5, and CSS3.
+# A decoupled full-stack task tracking application featuring secure session handling and role-isolated access controls.
 
 # 
 
-# \## Core Features
+# Tech Stack
 
-# \* \*\*Role-Based Access Control (RBAC):\*\* Strict server-side enforcement separating administrative and standard user capabilities. Administrators maintain global visibility, while standard users interact strictly with self-created or assigned records.
+# \- Backend: Java 17, Spring Boot 3, Spring Security, Spring Data JPA
 
-# \* \*\*Stateless Authentication:\*\* Secure user registration and session management leveraging JSON Web Tokens (JWT) and one-way BCrypt cryptographic password hashing via Spring Security.
+# \- Database: MySQL
 
-# \* \*\*Data Persistence:\*\* Relational database management utilizing MySQL, managed through Spring Data JPA for optimized object-relational mapping and data integrity.
-
-# 
-
-# \## Technical Tech Stack
-
-# \* \*\*Backend:\*\* Java 17, Spring Boot 3, Spring Security (JWT), Spring Data JPA
-
-# \* \*\*Database:\*\* MySQL
-
-# \* \*\*Frontend:\*\* HTML5, CSS3, JavaScript (ES6+)
+# \- Frontend: HTML5, CSS3, JavaScript
 
 # 
 
-# \## Architectural Highlights
+# Core Features
 
-# \* Implement decoupled frontend-to-backend communication via standard RESTful APIs.
+# \- Security: Server-side controls separating Admin overview from user records.
 
-# \* Enforce Cross-Origin Resource Sharing (CORS) configurations to ensure tight data transmission boundaries between the deployment domains.
+# \- Authentication: Secure login using JWT and BCrypt password hashing.
+
+# \- Architecture: REST API communication with configured CORS boundaries.
+
+
+
+# 
+
+# \## How to Run Locally
+
+# 
+
+# \*\*Backend\*\*
+
+# 1\. Create a MySQL database: `CREATE DATABASE taskflow\_db;`
+
+# 2\. Open `backend` in IntelliJ — Maven dependencies resolve automatically
+
+# 3\. Run `TaskflowApplication.java` — server starts on `localhost:8080`
+
+# 
+
+# \*\*Frontend\*\*
+
+# 1\. Open `frontend/index.html` directly in a browser
+
+# 2\. Register an account, then log in to access the dashboard
 
