@@ -11,9 +11,5 @@ Core Features
 - Security: Server-side controls separating Admin overview from user records.
 - Authentication: Secure login using JWT and BCrypt password hashing.
 - Architecture: REST API communication with configured CORS boundaries.
-# \## Architectural Highlights
 
-# \* Implement decoupled frontend-to-backend communication via standard RESTful APIs.
-
-# \* Enforce Cross-Origin Resource Sharing (CORS) configurations to ensure tight data transmission boundaries between the deployment domains.
 
