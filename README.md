@@ -39,3 +39,4 @@ taskflow/
     └── src/main/resources/
         └── static/              → HTML/CSS/JS frontend, served by the same backend
 ```
+```
