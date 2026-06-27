@@ -1,4 +1,4 @@
-# Workflow — Task & Workflow Management System
+# Taskkflow — Task & Workflow Management System
 
 A full-stack task tracking and team collaboration tool. Built with a Spring Boot REST API
 backend, MySQL for persistence, JWT-based authentication, and a vanilla HTML/CSS/JS frontend
