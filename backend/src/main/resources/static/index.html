@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow — Sign in</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="auth-shell">
+    <div class="auth-side">
+      <div class="brand-mark"><span class="led led--in-progress"></span> TaskFlow</div>
+
+      <div class="auth-side-content">
+        <h1>Plan the work.<br />Track it to done.</h1>
+        <p>A small, fast task board for teams who'd rather ship than fill out forms. Create tasks, assign them to teammates, and drag them across the board as work moves from To Do to Done.</p>
+
+        <svg class="schematic" width="320" height="120" viewBox="0 0 320 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="10" y1="20" x2="120" y2="20" stroke="#3a4a5a" stroke-width="1" stroke-dasharray="4 4"/>
+          <circle cx="10" cy="20" r="4" fill="#2F6FED"/>
+          <circle cx="120" cy="20" r="4" fill="#2F6FED"/>
+          <line x1="120" y1="20" x2="120" y2="60" stroke="#3a4a5a" stroke-width="1" stroke-dasharray="4 4"/>
+          <line x1="120" y1="60" x2="230" y2="60" stroke="#3a4a5a" stroke-width="1" stroke-dasharray="4 4"/>
+          <circle cx="230" cy="60" r="4" fill="#D98E34"/>
+          <line x1="230" y1="60" x2="230" y2="100" stroke="#3a4a5a" stroke-width="1" stroke-dasharray="4 4"/>
+          <line x1="230" y1="100" x2="305" y2="100" stroke="#3a4a5a" stroke-width="1" stroke-dasharray="4 4"/>
+          <circle cx="305" cy="100" r="4" fill="#3FA66B"/>
+        </svg>
+      </div>
+
+      <div class="auth-side-footer">SPRING BOOT · MYSQL · JWT AUTH</div>
+    </div>
+
+    <div class="auth-form-side">
+      <div class="auth-card">
+        <div id="error-banner" class="error-banner"></div>
+
+        <!-- LOGIN FORM -->
+        <div id="login-view">
+          <h2>Welcome back</h2>
+          <p class="subtitle">Sign in to see what's on your board.</p>
+          <form id="login-form">
+            <div class="field">
+              <label for="login-username">Username</label>
+              <input id="login-username" name="username" autocomplete="username" required />
+            </div>
+            <div class="field">
+              <label for="login-password">Password</label>
+              <input id="login-password" name="password" type="password" autocomplete="current-password" required />
+            </div>
+            <button class="btn btn-primary" type="submit">Sign in</button>
+          </form>
+          <div class="auth-toggle">
+            New here? <a href="#" id="show-register">Create an account</a>
+          </div>
+        </div>
+
+        <!-- REGISTER FORM -->
+        <div id="register-view" style="display:none;">
+          <h2>Create your account</h2>
+          <p class="subtitle">The very first account on a fresh deployment becomes the admin.</p>
+          <form id="register-form">
+            <div class="field">
+              <label for="register-username">Username</label>
+              <input id="register-username" name="username" autocomplete="username" required minlength="3" />
+            </div>
+            <div class="field">
+              <label for="register-email">Email</label>
+              <input id="register-email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="field">
+              <label for="register-password">Password</label>
+              <input id="register-password" name="password" type="password" autocomplete="new-password" required minlength="6" />
+            </div>
+            <button class="btn btn-primary" type="submit">Create account</button>
+          </form>
+          <div class="auth-toggle">
+            Already have an account? <a href="#" id="show-login">Sign in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
